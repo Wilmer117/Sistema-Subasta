@@ -1,11 +1,10 @@
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 import model.ArticuloSubasta;
 import model.Oferta;
 import model.Postor;
 import model.ResultadoOferta;
 import model.SistemaSubastas;
-
-import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 public class Main {
 
@@ -25,7 +24,7 @@ public class Main {
                 case 3 -> verOfertaMasAlta();
                 case 4 -> avanzarTiempo();
                 case 5 -> verPostores();
-                case 6 -> PruebasAutomaticas.ejecutar();
+               
                 case 7 -> continuar = false;
                 default -> System.out.println("Opcion invalida.\n");
             }
@@ -41,7 +40,7 @@ public class Main {
                 3. Ver oferta mas alta
                 4. Avanzar tiempo (cerrar subasta)
                 5. Ver postores registrados
-                6. Ejecutar pruebas automaticas
+                
                 7. Salir
                 --------------------------------""");
     }
